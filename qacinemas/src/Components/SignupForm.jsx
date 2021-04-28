@@ -27,6 +27,14 @@ const SignupForm = () => {
                 <label for="dob">Date of Birth:&nbsp;</label>
                 <input name="dob" type="tel" />
             </div>
+            <div className='form-group'>
+                <input name="male" type="radio" />
+                <label for="male">Male&nbsp;</label>
+                <input name="female" type="radio" />
+                <label for="female">Female&nbsp;</label>
+                <input name="other" type="radio" />
+                <label for="other">Other&nbsp;</label>
+            </div>
 
         </form>
     );
