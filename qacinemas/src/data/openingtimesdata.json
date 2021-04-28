@@ -1,0 +1,16 @@
+[{
+    "_id": "5ceeb04eebd86314c40a25b9",
+    "day": "Monday",
+    "opening": "11:00",
+    "close": "00:00"
+}, {
+    "_id": "5ceeb077ebd86314c40a25ba",
+    "day": "Friday",
+    "opening": "11:00",
+    "close": "02:00"
+}, {
+    "_id": "5ceeb08bebd86314c40a25bb",
+    "day": "Sunday",
+    "opening": "11:00",
+    "close": "23:00"
+}]
