@@ -23,6 +23,12 @@ td,th{
 }
 form{
   padding-top: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+label, input {
+  
+  display: inline-block;
 }
 .td-right-align{
   text-align: right;
