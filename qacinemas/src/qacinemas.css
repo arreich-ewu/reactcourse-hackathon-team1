@@ -1,32 +1,39 @@
-footer{
-  color:#f8f9fa;
+footer {
+    color: #f8f9fa;
 }
 
-#footer-txt{
-  padding-bottom: 15px;
+#footer-txt {
+    padding-bottom: 15px;
 }
 
-.navbar{
-  background-color: #fff;
+.navbar {
+    background-color: #fff;
 }
-.col-md-6{
-  padding: 1px;
+
+.col-md-6 {
+    padding: 1px;
 }
-.col-xs-12{
-  padding: 1px;
+
+.col-xs-12 {
+    padding: 1px;
 }
-#qa-navbar{
-  padding-left: 0px;
+
+#qa-navbar {
+    padding-left: 0px;
 }
-td,th{
-  text-align: center;
+
+td, th {
+    text-align: center;
 }
-form{
-  padding-top: 20px;
+
+form {
+    padding-top: 20px;
 }
-.td-right-align{
-  text-align: right;
+
+.td-right-align {
+    text-align: right;
 }
-.td-left-align{
-  text-align: left;
+
+.td-left-align {
+    text-align: left;
 }
