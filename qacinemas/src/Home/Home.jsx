@@ -1,11 +1,44 @@
 import React from 'react';
 
-import popcorn from '../../public/images/popcorn.jpeg';
+//import popcorn from '../../public/images/popcorn.jpeg';
 
 import HomePageArticle from './HomePageArticle';
 import CurrentShowings from "./CurrentShowings";
 
-const Home = () => {
+const Home = ({data}) => {
+
+    const [dataStatus, setDataStatus] = useState({
+        name: `loading`,
+        message: `Data is loading...`
+    });
+
+    useEffect(() => {
+        if (data?.error) {
+            setDataStatus({
+                name: `error`,
+                message: data.error
+            });
+        }
+        else if (data?.images) {
+            const ds = data.images.length > 0 ?
+                {
+                    name: `data`,
+                    message: null
+                } :
+                {
+                    name: `nodata`,
+                    message: `There were no images previously saved`
+                }
+        }
+        else {
+            setDataStatus({
+                name: `loading`,
+                message: `Data is loading...`
+            })
+        }
+    }, [data]);
+
+    
     return (
         <>
             <div className="container"><img src={popcorn} alt="Popcorn"/></div>

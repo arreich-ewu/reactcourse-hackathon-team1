@@ -1,10 +1,12 @@
 import React from 'react';
 
-import film1 from '../../public/images/interstellar.PNG';
-import film2 from '../../public/images/sonic-the-hedgehog.jpg';
-import film3 from '../../public/images/corona.jpg';
+//import film1 from '../../public/images/interstellar.PNG';
+//import film2 from '../../public/images/sonic-the-hedgehog.jpg';
+//import film3 from '../../public/images/corona.jpg';
 
-const CurrentShowings = () => {
+const CurrentShowings = ({data}) => {
+
+    
     return (
         <div className="container">
             <div className="row">
