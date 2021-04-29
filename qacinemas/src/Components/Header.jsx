@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Schedule from './ScheduleTable.jsx'
+import Schedule from './Schedule.jsx'
 import SignupForm from './SignupForm.jsx'
 import Home from './Home/Home.jsx'
 
