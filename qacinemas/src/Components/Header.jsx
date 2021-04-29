@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Schedule from './Schedule.jsx'
+import Schedule from './ScheduleTable.jsx'
 import SignupForm from './SignupForm.jsx'
 
 const Header = () => {

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SignupForm from './Components/SignupForm';
@@ -5,7 +6,7 @@ import './qacinemas.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
-import Home from './Home/Home';
+import Home from './Components/Home/Home';
 import axios from 'axios';
 import Modal from './Components/utils/Modal';
 
@@ -15,8 +16,8 @@ const IMAGESURL = `http://localhost:4000/images`;
 
 function App() {
   const [getError, setGetError] = useState(``);
-  const [films, setFilms] = useState(``);
-  const [images, setImages] = useState(``);
+  const [films, setFilms] = useState({});
+  const [images, setImages] = useState({});
 
   useEffect(() => {
     const getData = async () => {
@@ -26,7 +27,7 @@ function App() {
     getData();
   });
 
-  const getFilms = () => {
+  const getFilms = async () => {
     try {
       const res = await axios.get(FILMSURL);
       return res.data.length ? { films: res.data } : { error: 'There are no films stored' };
@@ -37,7 +38,7 @@ function App() {
     }
   }
 
-  const getImages = () => {
+  const getImages = async () => {
     try {
       const res = await axios.get(IMAGESURL);
       return res.data.length ? { images: res.data } : { error: 'There are no films stored' };
@@ -56,7 +57,7 @@ function App() {
       <div className="container">
         <Header />
         <div className="container">
-          <Home />
+          <Home data={{films:films, images:images}}/>
         </div>
         <Footer />
       </div>

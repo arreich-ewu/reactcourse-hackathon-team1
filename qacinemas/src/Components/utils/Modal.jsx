@@ -9,7 +9,7 @@ const Modal = ({ handleClose, message }) => {
     return (
         <div className={showHideClassName}>
             <section className="modal-main">
-                <h3>Todo Application Information</h3>
+                <h3>QA Cinemas Application Information</h3>
                 <p>{message}</p>
                 <button className="btn btn-primary" onClick={handleClose}>Close</button>
             </section>
