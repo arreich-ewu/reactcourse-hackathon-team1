@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Home from './Home/Home';
 import axios from 'axios';
+import Modal from './Components/utils/Modal';
 
 const FILMSURL = `http://localhost:4000/films`;
 const IMAGESURL = `http://localhost:4000/images`;
@@ -18,7 +19,7 @@ function App() {
   const [images, setImages] = useState(``);
 
   useEffect(() => {
-    const getData= async () => {
+    const getData = async () => {
       setFilms(await getFilms());
       setImages(await getImages());
     }
@@ -48,13 +49,18 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <Header/>
+    <>
+      {getError && <Modal handleClose={() =>
+        setGetError(``)}
+        message={getError} />}
       <div className="container">
-        <Home/>
+        <Header />
+        <div className="container">
+          <Home />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
 
