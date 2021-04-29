@@ -20,18 +20,24 @@ const CurrentShowings = ({data}) => {
                 message: data.error
             });
         }
-        else if (data?.length > 0 ?
-            
+        else if (data?.length > 0){
+            setDataStatus(
                 {
                     name: `data`,
                     message: null
-                } :
-                {
-                    name: `nodata`,
-                    message: `There were no todos previously saved`
-                }
+                })
+            }
+        else if(data?.length == 0) {
+            setDataStatus(
+                    {
+                        name: `nodata`,
+                        message: `There were no todos previously saved`
+                    }
+            )
+        }
+            
         
-        else {
+        else{
             setDataStatus({
                 name: `loading`,
                 message: `Data is loading...`
