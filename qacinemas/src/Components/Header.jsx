@@ -1,10 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Schedule from './Schedule.jsx'
+import SignupForm from './SignupForm.jsx'
 
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-sm">
 
+      <Router>
+        <div>
+      <nav className="navbar navbar-expand-sm">
           <nav className="navbar-brand">QA</nav>
           <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="nav navbar-nav navbar-right">
@@ -12,14 +17,27 @@ const Header = () => {
                     <a href="/">Home</a>
                   </li>
                   <li className="nav-item px-3">
-                    <a href="/">Schedule</a>
+                    <a href="/schedule">Schedule</a>
                   </li>
                   <li className="nav-item px-3">
-                    <a href="/">Signup</a>
+                    <a href="/signup">Signup</a>
                   </li>
                 </ul>
             </div>
       </nav>
+
+      <Switch>
+          <Route path="/schedule">
+            <Schedule />
+          </Route>
+          <Route path="/signup">
+            <SignupForm />
+          </Route>
+        </Switch>
+
+      </div>
+      </Router>
+
     </header>
   );
 };
