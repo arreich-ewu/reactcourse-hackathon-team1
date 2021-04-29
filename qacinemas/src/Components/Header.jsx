@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Schedule from './Schedule.jsx'
 import SignupForm from './SignupForm.jsx'
+import Home from './Home/Home.jsx'
 
 const Header = () => {
   return (
@@ -32,6 +33,9 @@ const Header = () => {
           </Route>
           <Route path="/signup">
             <SignupForm />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
 
