@@ -1,0 +1,135 @@
+{
+    "films": [
+        {
+            "id": 1,
+            "_id": "5c9e51c24c6ee53ff09d5d01",
+            "title": "King of Thieves",
+            "synopsis": " Test Film 1 Synopsis",
+            "cast": "Test Film 1 Cast",
+            "directors": "Test Film 1 Directors",
+            "showingTimes": "11:45, 13:30, 17:15, 20:45",
+            "releaseDate": "2019-05-27T00:00:00.000Z",
+            "filmStatus": "1",
+            "img": "KingOfThieves.jpg"
+        },
+        {
+            "id": 2,
+            "_id": "5c9e51c24c6ee53ff09d5d02",
+            "title": "The Predator",
+            "synopsis": " Test Film 2 Synopsis",
+            "cast": "Test Film 2 Cast",
+            "directors": "Test Film 2 Directors",
+            "showingTimes": "11:45, 13:30, 17:15, 20:45",
+            "releaseDate": "2019-10-27T00:00:00.000Z",
+            "filmStatus": "1",
+            "img": "ThePredator.jpg"
+        },
+        {
+            "id": 3,
+            "_id": "5c9e51c24c6ee53ff09d5d03",
+            "title": "The House with a Clock in its Walls",
+            "synopsis": " Test Film 3 Synopsis",
+            "cast": "Test Film 3 Cast",
+            "directors": "Test Film 3 Directors",
+            "showingTimes": "11:45, 13:30, 17:15, 20:45",
+            "releaseDate": "2019-05-27T00:00:00.000Z",
+            "filmStatus": "2",
+            "img": "TheHouse.jpg"
+        }
+    ],
+
+    "images": [
+        {
+            "id": 1,
+            "popcorn": { 
+                "src": "images/popcorn.jpeg", 
+                "alt": "QA Cinemas" 
+            }
+        },
+        {
+            "id": 2,
+            "london": { 
+                "src": "images/InternationalHouse.jpeg", 
+                "alt": "QA London" 
+            }
+        },
+        {
+            "id": 3,
+            "manchester": { 
+                "src": "images/download.jpeg", 
+                "alt": "QA Manchester" 
+            }
+        },
+        {
+            "id": 4,
+            "locations": { 
+                "src": "images/Locations.jpg", 
+                "alt": "QA Schedule Image" 
+            }
+        },
+        {
+            "id": 5,
+            "signup": { 
+                "src": "images/signup.jpg", 
+                "alt": "QA Sign Up Image" 
+            }
+        }
+    ],
+    
+    "filmimages":[
+        {
+            "id": 1,
+            "King of Thieves": {
+                "src": "images/KingOfThieves.jpg", 
+                "alt": "King of Thieves"
+            }
+        },
+        {
+            "id": 2,
+            "The Predator": {
+                "src": "images/ThePredator.jpg", 
+                "alt": "The Predator"
+            }
+        },
+        {
+            "id": 3,
+            "The House with a Clock in its Walls": {
+                "src": "images/TheHouse.jpg", 
+                "alt": "The House with a Clock in its Walls"
+            }
+        },
+        {
+            "id": 4,
+            "No Image": {
+                "src": "images/No_image_available.svg",
+                "alt": "Image not available"
+            }
+        }
+    ],
+
+    "openingtimes" : [
+        {
+            "id": 1,
+            "_id": "5ca730905f52db3c8f637a34",
+            "day": "Monday",
+            "opening": "11:00",
+            "close": "00:00"
+        }, 
+        {
+            "id": 2,
+            "_id": "5ca730905f52db3c8f637a35",
+            "day": "Friday",
+            "opening": "11:00",
+            "close": "02:00"
+        }, 
+        {
+            "id": 3,
+            "_id": "5ca730905f52db3c8f637a36",
+            "day": "Sunday",
+            "opening": "11:00",
+            "close": "23:00"
+        }
+    ]
+
+
+}
